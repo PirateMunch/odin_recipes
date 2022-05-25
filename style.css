@@ -1,0 +1,46 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    color: red; 
+    background-color: aqua; 
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    font-size: 64px;
+    margin: 32px;
+}
+
+.recipes {
+    display: flex;
+    background-color: rgb(240, 161, 229);
+    padding: 32px;
+    font-size: 32px;
+    justify-content: space-evenly;
+    gap: 32px;
+    margin: 64px;
+}
+
+.lasagna {
+    color: greenyellow;
+    display: flex;
+}
+
+.carbonara {
+    color: aquamarine;
+}
+
+.arancini {
+    color: blueviolet;
+}
