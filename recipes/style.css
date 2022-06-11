@@ -1,7 +1,7 @@
 /* responsive style */
 html, body {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+  height:auto!important;
+  min-height:100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,30 +9,40 @@ html, body {
   }
   
     @media only screen and (max-width: 800px) {
-      html {
-        font-size: 10px;
-        height: calc(var(--vh, 1vh) * 100)
+      html, body {
+        font-size: 10vw;
+        height:750px!important;
+        min-height:150px
       }
     }
-  
+
+    /* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .lasa, .ingredients, .steps, img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
     @media only screen and (max-width: 550px) {
       html {
-        font-size: 8px;
-        height: calc(var(--vh, 1vh) * 100)
+        font-size: 8vw;
+        height:auto!important;
+        min-height:100vh;
       }
     }
   
     @media only screen and (max-width: 450px) {
       html {
-        font-size: 7px;
-        height: calc(var(--vh, 1vh) * 100);
+        font-size: 7vw;
+        height:auto!important;
+        min-height:100vh;
       }
   
     }
 
     body {
       max-width: 100%;
-      max-height: fit-content;
+      height:auto!important;
+      min-height:100vh;
         margin: 0;
         color: #fff;
         background: linear-gradient(-45deg, #e2592f, #f3880f, #fcaf58, #a5010f);
@@ -125,6 +135,7 @@ img{
     border-radius: 10%;
     max-width: 100%;
     max-height: fit-content;
+    float: left;
 }
 
 .lasa {
@@ -135,6 +146,7 @@ img{
     padding: 6%;
     max-width: 100%;
     max-height: fit-content;
+    float: left;
 }
 
 .textBox {
@@ -155,6 +167,7 @@ img{
     border-radius: 10%;
     max-width: 100%;
     max-height: fit-content;
+    float: left;
 }
 .ingredients {
   float: right;
@@ -166,6 +179,7 @@ img{
     border-radius: 5%;
     max-width: 100%;
     max-height: fit-content;
+    float: left;
 }
 
 li {
