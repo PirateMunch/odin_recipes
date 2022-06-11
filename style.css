@@ -17,6 +17,9 @@ html, body {
         height:750px!important;
         min-height:100vh;
       }
+      .imgBox {
+        margin-top: 6vw;
+      }
     }
   
     @media only screen and (max-width: 550px) {
@@ -25,6 +28,9 @@ html, body {
         height:auto!important;
         min-height:100vh;
       }
+      .imgBox {
+        margin-top: 6vw;
+      }
     }
   
     @media only screen and (max-width: 450px) {
@@ -32,6 +38,9 @@ html, body {
         font-size: 7px;
         height:auto!important;
         min-height:100vh;
+      }
+      .imgBox {
+        margin-top: 6vw;
       }
   
     }
@@ -72,7 +81,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 3%;
-    font-size: xx-large;
+    font-size: 6vw;
     font-weight: 900;
     border: 3px solid white;
     border-radius: 20%;
@@ -86,11 +95,18 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-content: space-between;
+    align-content: space-evenly;
     align-items: center;
     align-self: center;
     max-width: 100%;
     max-height: fit-content;
+    margin-top: 15vw;
+    
+}
+
+ul {
+  display: flex;
+  padding-inline-start: 0;
 }
 
 img{
@@ -103,7 +119,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
-    font-size: x-large;
+    font-size: 10vw;
     padding: 6%;
     max-width: 100%;
     max-height: fit-content;
@@ -135,6 +151,7 @@ a {
 .arancini {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     width: 30%;
     padding: 6%;
     max-width: 100%;
@@ -146,7 +163,7 @@ a {
     display: flex;
     padding: 3%;
     justify-content: center;
-    font-size: xx-large;
+    font-size: 6vw;
     font-weight: 700;
     max-width: 100%;
     max-height: fit-content;
@@ -155,7 +172,11 @@ a {
 footer {
     display: flex;
     justify-content: space-evenly;
-    padding: 1%;
+    padding: 4vw;
     max-width: 100%;
     max-height: fit-content;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }

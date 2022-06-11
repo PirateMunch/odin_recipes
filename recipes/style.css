@@ -5,13 +5,12 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
   }
   
     @media only screen and (max-width: 800px) {
       html, body {
         font-size: 10vw;
-        height:750px!important;
+        height:auto!important;
         min-height:150px
       }
     }
@@ -76,7 +75,7 @@ a {
   display: flex;
   text-decoration: none;
   align-self: center;
-  font-size: x-large;
+  font-size: 4vw;
   font-weight: 500;
   border: 3px solid white;
   border-radius: 20%;
@@ -86,20 +85,20 @@ a {
   margin-left: auto;
   max-width: 100%;
   max-height: fit-content;
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     padding: 3%;
-    font-size: xx-large;
+    font-size: 8vw;
     font-weight: 900;
     border: 3px solid white;
     border-radius: 20%;
     width: fit-content;
     align-content: center;
-    margin-left: 35%;
+    margin-left: 18vw;
     max-width: 100%;
     max-height: fit-content;
 }
@@ -122,6 +121,7 @@ a:active {
 .imgBox {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
     align-items: center;
@@ -142,7 +142,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
-    font-size: x-large;
+    font-size: 3vw;
     padding: 6%;
     max-width: 100%;
     max-height: fit-content;
@@ -163,7 +163,7 @@ img{
     flex-direction: column;
     background-color: chocolate;
     padding: 2%;
-    font-size: x-large;
+    font-size: 3vw;
     border-radius: 10%;
     max-width: 100%;
     max-height: fit-content;
@@ -175,7 +175,7 @@ img{
     flex-direction: column;
     background-color: darkorange;
     padding: 2%;
-    font-size: x-large;
+    font-size: 3vw;
     border-radius: 5%;
     max-width: 100%;
     max-height: fit-content;
@@ -187,9 +187,14 @@ li {
 }
 
 footer {
+  font-size: 4vw;
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
     max-width: 100%;
     max-height: fit-content;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
