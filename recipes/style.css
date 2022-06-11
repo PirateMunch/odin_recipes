@@ -25,12 +25,14 @@ html, body {
     @media only screen and (max-width: 450px) {
       html {
         font-size: 7px;
-        height: calc(var(--vh, 1vh) * 100)
+        height: calc(var(--vh, 1vh) * 100);
       }
   
     }
 
     body {
+      max-width: 100%;
+      max-height: fit-content;
         margin: 0;
         color: #fff;
         background: linear-gradient(-45deg, #e2592f, #f3880f, #fcaf58, #a5010f);
@@ -56,6 +58,8 @@ header {
     align-content: center;
     border: 3px solid white;
     border-radius: 10%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 a {
@@ -69,7 +73,10 @@ a {
   padding: 1%;
   width: fit-content;
   color: white;
-  margin-left: 20%;
+  margin-left: auto;
+  max-width: 100%;
+  max-height: fit-content;
+  margin-right: 2%;
 }
 
 h1 {
@@ -83,6 +90,8 @@ h1 {
     width: fit-content;
     align-content: center;
     margin-left: 35%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 a:link {
@@ -108,10 +117,14 @@ a:active {
     align-items: center;
     align-self: center;
     width:100%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 img{
     border-radius: 10%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 .lasa {
@@ -120,29 +133,39 @@ img{
     width: 30%;
     font-size: x-large;
     padding: 6%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 .textBox {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 .steps {
+  float: right;
     display: flex;
     flex-direction: column;
     background-color: chocolate;
     padding: 2%;
     font-size: x-large;
     border-radius: 10%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 .ingredients {
+  float: right;
     display: flex;
     flex-direction: column;
     background-color: darkorange;
     padding: 2%;
     font-size: x-large;
     border-radius: 5%;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 li {
@@ -153,4 +176,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
+    max-width: 100%;
+    max-height: fit-content;
 }
